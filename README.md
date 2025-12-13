@@ -1,27 +1,42 @@
-# ArcaStudios
+# Arca Studios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Monorepo Angular 19+ com SSR, hidratação e design system para o site institucional da Arca Studios.
 
-## Development server
+## Stack e ferramentas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular 19 (standalone, SSR com `@angular/ssr`)
+- Angular Material + theming customizado
+- Tailwind CSS e Sass globais
+- i18n pt-PT, SEO avançado e acessibilidade
+- Jest para unit tests e Playwright para E2E
+- ESLint (flat config) + Prettier + Husky + lint-staged
 
-## Code scaffolding
+## Scripts principais
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```bash
+npm install              # instala dependências
+npm run dev:ssr          # serve SSR em modo desenvolvimento
+npm run build:ssr        # build SSR (browser + server)
+npm run serve:ssr        # executa bundle SSR gerado
+npm run lint             # ESLint
+npm run test             # Jest
+npm run e2e              # Playwright
+npm run format           # Prettier write
+```
 
-## Build
+## Estrutura em destaque
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `src/app/core`: layout, serviços (SEO, Analytics), interceptors, theming e utilitários
+- `src/app/shared`: componentes reutilizáveis, diretivas e pipes
+- `src/app/features`: páginas (home, about, services, cases, case-detail, contact, errors)
+- `src/assets/mock`: dados estruturados para serviços, cases, métricas e contactos
+- `styles/`: Tailwind e estilos globais
 
-## Running unit tests
+## Fluxo de desenvolvimento
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Instale as dependências (`npm install`)
+2. Execute `npm run dev:ssr` e aceda a `http://localhost:4200`
+3. Antes de commitar, Husky executa lint/format via lint-staged
+4. Use `npm run test` e `npm run e2e` para validar regressões
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+> Requer Node.js >= 18.19 (ver `package.json` engines). Para produção, configure `environment.apiBaseUrl` e substitua os mocks por integrações com CMS/headless API.

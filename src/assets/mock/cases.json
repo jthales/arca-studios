@@ -1,0 +1,229 @@
+[
+  {
+    "id": "unad-florida",
+    "title": "UNAD Florida",
+    "slug": "unad-florida",
+    "summary": "Estratégia 360° com mídia paga, UGC e eventos para aumentar matrículas internacionais.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["educação", "campanha 360", "eventos"],
+    "categories": ["Educação", "Growth"],
+    "challenge": "Reacender o interesse na universidade durante ciclos de matrícula mais curtos, mantendo consistência em diversos mercados latino-americanos.",
+    "strategy": [
+      "Mapeamento de jornadas de decisão e criação de conteúdo UGC autenticado por alunos e alumni.",
+      "Operação de mídia paga com segmentações dinâmicas e gatilhos por idioma.",
+      "Eventos híbridos (on/offline) com embaixadores para fortalecer confiança."
+    ],
+    "results": [
+      "Conversão em leads qualificados cresceu 94% em três meses.",
+      "Taxa de resposta em email marketing aumentou 38%.",
+      "Construção de pipeline previsível com dados centralizados."
+    ],
+    "metrics": [
+      { "label": "Leads Qualificados", "value": "+94%" },
+      { "label": "Taxa de Resposta em Email", "value": "+38%" },
+      { "label": "Eventos Realizados", "value": "12" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "remoti",
+    "title": "Remoti",
+    "slug": "remoti",
+    "summary": "Posicionamento B2B e gestão estratégica de redes para ampliar presença na América Latina.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["b2b", "social media", "posicionamento"],
+    "categories": ["Tecnologia", "B2B"],
+    "challenge": "Tornar a marca memorável em um segmento competitivo de recrutamento remoto.",
+    "strategy": [
+      "Arquitetura de conteúdo orientada a especialistas e histórias reais de clientes.",
+      "Sprints quinzenais de growth com testes A/B em formatos de LinkedIn.",
+      "Treinamento de porta-vozes e manual de voz para o time comercial."
+    ],
+    "results": [
+      "Crescimento de 3x no tráfego qualificado para o blog em 90 dias.",
+      "Ampliação da reputação como referência em contratações complexas.",
+      "Time interno capacitado para manter consistência de voz."
+    ],
+    "metrics": [
+      { "label": "Tráfego Qualificado", "value": "3x" },
+      { "label": "Novos Leads Enterprise", "value": "+57" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "aroma-brasil",
+    "title": "Aroma Brasil",
+    "slug": "aroma-brasil",
+    "summary": "Branding autêntico para restaurante premium em Portugal.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["branding", "gastronomia"],
+    "categories": ["Hospitalidade", "Branding"],
+    "challenge": "Traduzir o repertório brasileiro com elegância para o público premium português.",
+    "strategy": [
+      "Pesquisa etnográfica com comensais frequentes de restaurantes fine dining.",
+      "Desenvolvimento de identidade visual com materiais e fotografia sensorial.",
+      "Experiência de lançamento com menu storytelling e ativações com imprensa."
+    ],
+    "results": [
+      "Reservas esgotadas para o primeiro trimestre de operação.",
+      "Cobertura em veículos gastronômicos especializados.",
+      "Percepção de marca como destino obrigatório para experiências imersivas."
+    ],
+    "metrics": [
+      { "label": "Reservas Antecipadas", "value": "100%" },
+      { "label": "Menções na Imprensa", "value": "+12" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "urban-obras",
+    "title": "Urban Obras",
+    "slug": "urban-obras",
+    "summary": "Conteúdo personalizado e estratégia de autoridade que atraiu novos investidores.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["conteúdo", "growth", "investidores"],
+    "categories": ["Construção", "Investimentos"],
+    "challenge": "Gerar confiança em um mercado conservador com ciclos longos de decisão.",
+    "strategy": [
+      "Documentação audiovisual de processos para mostrar transparência.",
+      "Pilares editoriais alinhados a sustentabilidade e retorno de investimento.",
+      "Campanhas específicas para fundos internacionais interessados em Portugal."
+    ],
+    "results": [
+      "Quatro novos investidores no primeiro semestre após a campanha.",
+      "Redução do ciclo de negociação em 23%.",
+      "Elevação da percepção de inovação através de relatórios proprietários."
+    ],
+    "metrics": [
+      { "label": "Novos Investidores", "value": "4" },
+      { "label": "Redução do Ciclo de Negociação", "value": "-23%" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "waves-eyewear",
+    "title": "Waves Eyewear",
+    "slug": "waves-eyewear",
+    "summary": "Identidade refinada para público streetwear de alto padrão.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["design", "streetwear", "luxo"],
+    "categories": ["Moda", "Branding"],
+    "challenge": "Unir linguagem street com sofisticação para um público exigente e global.",
+    "strategy": [
+      "Co-criação com artistas e stylists que representam a cena urbana premium.",
+      "Sistema visual modular que ganha escala em cápsulas e collabs.",
+      "Campanha multi-market com drops limitados e experiências seletivas."
+    ],
+    "results": [
+      "Drop esgotado nas primeiras 48 horas.",
+      "Amplificação via influenciadores chave em Nova Iorque, Lisboa e São Paulo.",
+      "Reforço de marca como referência em eyewear autoral."
+    ],
+    "metrics": [
+      { "label": "Vendas do Drop", "value": "100% em 48h" },
+      { "label": "Engajamento em Lançamento", "value": "+162%" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "vangor",
+    "title": "Vangor",
+    "slug": "vangor",
+    "summary": "Estratégia digital com voz de marca fortalecida e destaque na mídia.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["estratégia digital", "brand voice"],
+    "categories": ["Arquitetura", "Comunicação"],
+    "challenge": "Transformar uma reputação técnica em uma narrativa desejável para públicos diversos.",
+    "strategy": [
+      "Labs de posicionamento com stakeholders internos e clientes premium.",
+      "Guidelines de voz e storytelling cruzando coragem, visão e legado.",
+      "Plano editorial omnichannel com foco em matérias proprietárias."
+    ],
+    "results": [
+      "Citações espontâneas em veículos de arquitetura e negócios.",
+      "Aumento de convites para palestras e keynotes.",
+      "Comunidade digital engajada em torno de lançamentos arquitetônicos."
+    ],
+    "metrics": [
+      { "label": "Matérias Especializadas", "value": "+14" },
+      { "label": "Convites para Palestras", "value": "+9" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "raices",
+    "title": "Raíces",
+    "slug": "raices",
+    "summary": "Storytelling para turismo rural com foco em memória e território.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["turismo", "storytelling"],
+    "categories": ["Turismo", "Experiências"],
+    "challenge": "Mostrar o valor do turismo regenerativo e das comunidades locais.",
+    "strategy": [
+      "Residências criativas com fotógrafos e escritores para registros sensoriais.",
+      "Plataforma editorial destacando famílias, receitas e trilhas históricas.",
+      "Ações com operadoras para experiências imersivas e colaborativas."
+    ],
+    "results": [
+      "Aumento de reservas em baixa temporada.",
+      "Parcerias com operadores internacionais de turismo consciente.",
+      "Fortalecimento da memória afetiva e orgulho comunitário."
+    ],
+    "metrics": [
+      { "label": "Reservas em Baixa Temporada", "value": "+58%" },
+      { "label": "Parcerias Internacionais", "value": "+6" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "cloud",
+    "title": "Cloud",
+    "slug": "cloud",
+    "summary": "Branding de lenços de seda com estética moderna e internacional.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["branding", "produto", "lifestyle"],
+    "categories": ["Moda", "E-commerce"],
+    "challenge": "Criar desejo em lançamentos sazonais com tiragens limitadas.",
+    "strategy": [
+      "Direção de arte modular com base em texturas fotográficas e movimentos fluidos.",
+      "Campanhas com creators independentes que traduzem o lifestyle da marca.",
+      "Arquitetura de e-commerce com microinterações e conteúdo editorial."
+    ],
+    "results": [
+      "Ticket médio cresceu 32%.",
+      "Comunidade ativa com programas de cápsulas exclusivas.",
+      "Reconhecimento em publicações de moda contemporânea."
+    ],
+    "metrics": [
+      { "label": "Ticket Médio", "value": "+32%" },
+      { "label": "Recorrência de Clientes", "value": "67%" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  },
+  {
+    "id": "hacer-la-paz",
+    "title": "Hacer la Paz",
+    "slug": "hacer-la-paz",
+    "summary": "Campanha que expõe a cronologia de assassinatos e mantém a memória ativa.",
+    "cover": "/assets/mock/placeholders/case-placeholder.svg",
+    "tags": ["impacto social", "memória", "campanha"],
+    "categories": ["Terceiro Setor", "Impacto"],
+    "challenge": "Dar visibilidade e urgência para uma pauta sensível sem cair em estetização da violência.",
+    "strategy": [
+      "Pesquisa histórica em parceria com organizações de direitos humanos.",
+      "Instalações urbanas e peças digitais que convidam à ação e denúncia.",
+      "Plataforma viva com linha do tempo interativa e recursos educacionais."
+    ],
+    "results": [
+      "Alcance orgânico recorde durante a semana de ativação.",
+      "Cobertura em veículos nacionais e internacionais.",
+      "Captação de fundos direcionados para proteção de lideranças comunitárias."
+    ],
+    "metrics": [
+      { "label": "Alcance Orgânico", "value": "3.2M" },
+      { "label": "Fundos Captados", "value": "€420K" }
+    ],
+    "gallery": ["/assets/mock/placeholders/case-placeholder.svg"]
+  }
+]
+

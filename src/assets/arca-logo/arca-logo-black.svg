@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-labelledby="arcaLogoBlackTitle">
+  <title id="arcaLogoBlackTitle">Arca Studios</title>
+  <rect width="320" height="80" fill="#FFFFFF" rx="12" />
+  <g fill="#000000" font-family="Work Sans, Arial, sans-serif" font-weight="700" letter-spacing="0.08em">
+    <text x="32" y="52" font-size="40">ARCA</text>
+    <text x="196" y="52" font-size="28">STUDIOS</text>
+  </g>
+</svg>
+

@@ -19,9 +19,37 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "baseUrl": "./src",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "paths": {
+      "@app/*": [
+        "app/*"
+      ],
+      "@core/*": [
+        "app/core/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@features/*": [
+        "app/features/*"
+      ],
+      "@environments/*": [
+        "environments/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ]
+    },
     "lib": [
       "ES2022",
-      "dom"
+      "DOM",
+      "DOM.Iterable"
     ]
   },
   "angularCompilerOptions": {
