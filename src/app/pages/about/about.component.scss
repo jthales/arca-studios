@@ -1,0 +1,12 @@
+.about-container {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+
+  h1 {
+    font-size: 3rem;
+    color: var(--text-primary);
+  }
+}
+

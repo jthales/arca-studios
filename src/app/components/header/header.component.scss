@@ -1,0 +1,496 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  background-color: #000;
+  box-shadow: 0 0.25px 0 0 rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 1000;
+  padding: 0;
+  
+  // Sticky only on mobile
+  @media (max-width: 768px) {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+// Logo
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+// Right side container
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+// Navigation
+.nav {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FD262D;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: #ffffff;
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  &.active {
+    color: #ffffff;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// Language Selector with Dropdown - Refactored
+.language-selector-container {
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+// Invisible bridge to connect button and dropdown - prevents gap issues
+.language-dropdown-bridge {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  height: 8px;
+  background: transparent;
+  z-index: 1002;
+  pointer-events: auto;
+}
+
+.flag-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 1001;
+
+  &.current-flag {
+    border-color: rgba(255, 255, 255, 0.3);
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+    
+    &[aria-expanded="true"] {
+      border-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(253, 38, 45, 0.3);
+  }
+}
+
+.flag-image {
+  width: 28px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+// Dropdown menu - Positioned right after bridge with no visual gap
+.language-dropdown {
+  position: absolute;
+  top: calc(100% + 8px); // Right after bridge
+  right: 0;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1003;
+  animation: slideDown 0.2s ease-out;
+  
+  // Extend invisible clickable area upward to overlap bridge
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -20px;
+    right: -20px;
+    height: 8px;
+    background: transparent;
+    pointer-events: auto;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-flag {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    background-color: rgba(253, 38, 45, 0.2);
+    border-color: #FD262D;
+  }
+}
+
+// CTA Button - Using standardized button styles
+.cta-button {
+  background-color: #FD262D;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #ff3d44;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(253, 38, 45, 0.3);
+  }
+}
+
+
+// Mobile Menu Toggle (Hamburger)
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1004;
+
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hamburger-icon {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+}
+
+// Mobile Menu Overlay
+.mobile-menu-overlay {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1003;
+    animation: fadeIn 0.3s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 320px;
+  background-color: #000;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+  animation: slideInRight 0.3s ease;
+  overflow-y: auto;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-nav-item {
+  margin: 0;
+}
+
+.mobile-nav-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color 0.3s ease;
+
+  &:hover,
+  &.active {
+    color: #fff;
+    border-bottom-color: #FD262D;
+  }
+}
+
+// Mobile Language Selector
+.mobile-language-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-language-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.mobile-language-flags {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.mobile-flag-button {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.active {
+    background-color: rgba(253, 38, 45, 0.2);
+    border-color: #FD262D;
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+// Mobile CTA Button
+.mobile-cta-button {
+  background-color: #FD262D;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: auto;
+
+  &:hover {
+    background-color: #ff3d44;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Mobile responsive
+@media (max-width: 768px) {
+  .header-container {
+    padding: 24px 16px;
+    gap: 1rem;
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  // Hide desktop navigation and actions
+  .header-right {
+    display: none;
+  }
+
+  // Show mobile menu toggle
+  .mobile-menu-toggle {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-menu {
+    width: 100%;
+    max-width: 100%;
+  }
+}
