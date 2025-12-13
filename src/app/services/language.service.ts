@@ -81,10 +81,15 @@ export class LanguageService {
       if (saved && this.translations[saved]) {
         this.currentLanguage.set(saved);
       } else {
-        const browserLang = navigator.language.split('-')[0];
-        if (browserLang === 'en' || browserLang === 'es') {
-          this.currentLanguage.set(browserLang as Language);
+        // Detect browser language
+        const browserLang = navigator.language.toLowerCase();
+        const langCode = browserLang.split('-')[0];
+        
+        // Check if browser language matches any of our supported languages
+        if (langCode === 'pt' || langCode === 'en' || langCode === 'es') {
+          this.currentLanguage.set(langCode as Language);
         }
+        // Default to Portuguese if language not supported
       }
     }
   }
