@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { filter } from 'rxjs/operators';
 import { isPlatformBrowser } from '@angular/common';
 import { ViewportScroller } from '@angular/common';
+import { SEOService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
@@ -19,9 +20,16 @@ export class AppComponent implements OnInit {
   router = inject(Router);
   viewportScroller = inject(ViewportScroller);
   platformId = inject(PLATFORM_ID);
+  seoService = inject(SEOService);
   isHomePage = false;
   
   ngOnInit(): void {
+    // Add global structured data
+    if (isPlatformBrowser(this.platformId)) {
+      this.seoService.addOrganizationSchema();
+      this.seoService.addWebSiteSchema();
+    }
+    
     // Check initial route
     this.checkRoute();
     

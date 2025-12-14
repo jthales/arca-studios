@@ -1,12 +1,12 @@
-<div class="home-container">
+<section class="home-container" aria-label="Home">
   <h1>{{ translations().heading1 }}</h1>
   <h2>{{ translations().heading2 }}</h2>
   <div class="home-buttons">
-    <button class="btn-primary" routerLink="/portfolio">
+    <a routerLink="/portfolio" class="btn-primary" [attr.aria-label]="translations().buttonPrimary">
       {{ translations().buttonPrimary }}
-    </button>
-    <button class="btn-secondary" routerLink="/contact">
+    </a>
+    <a routerLink="/contact" class="btn-secondary" [attr.aria-label]="translations().buttonSecondary">
       {{ translations().buttonSecondary }}
-    </button>
+    </a>
   </div>
-</div>
+</section>

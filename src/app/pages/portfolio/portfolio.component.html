@@ -1,14 +1,14 @@
-<div class="portfolio-container">
-  <div class="portfolio-header">
+<section class="portfolio-container" aria-label="Portfolio">
+  <header class="portfolio-header">
     <h1>{{ translations().heading1 }}</h1>
     <h2>{{ translations().heading2 }}</h2>
-  </div>
+  </header>
 
-  <div class="portfolio-grid">
+  <div class="portfolio-grid" role="list">
     @for (project of projects; track project.id) {
-      <div class="portfolio-card">
+      <article class="portfolio-card" role="listitem">
         <div class="portfolio-image-container">
-          <img [src]="project.image" [alt]="project.name" class="portfolio-image" />
+          <img [src]="project.image" [alt]="project.name + ' - ' + project.description + ' | Arca Studios'" class="portfolio-image" loading="lazy" />
           <div class="portfolio-overlay">
             <div class="portfolio-content">
               <h3 class="portfolio-name">{{ project.name }}</h3>
@@ -22,7 +22,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     }
   </div>
-</div>
+</section>

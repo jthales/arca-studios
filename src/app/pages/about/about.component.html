@@ -1,11 +1,11 @@
-<div class="about-container">
+<main class="about-container" aria-label="Sobre Nós">
   <!-- Hero Section with Image -->
-  <section class="about-hero">
+  <section class="about-hero" aria-labelledby="hero-title">
     <div class="hero-image-container">
-      <img src="/images/about-us/about-us.png" alt="Equipe trabalhando" class="hero-image" />
+      <img src="/images/about-us/about-us.png" alt="Equipe Arca Studios trabalhando em projetos de branding e marketing estratégico" class="hero-image" loading="lazy" />
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <h1 class="hero-title">{{ translations().hero.title }}</h1>
+        <h1 class="hero-title" id="hero-title">{{ translations().hero.title }}</h1>
         <p class="hero-description">{{ translations().hero.description }}</p>
       </div>
     </div>
@@ -29,7 +29,7 @@
 
   <!-- Image Section 2 -->
   <section class="about-image-section-2">
-    <img src="/images/about-us/about-us-2.png" alt="Equipe trabalhando" class="about-image-2" />
+    <img src="/images/about-us/about-us-2.png" alt="Equipe Arca Studios desenvolvendo estratégias de marca e marketing" class="about-image-2" loading="lazy" />
   </section>
 
   <!-- Impact Numbers Section -->
@@ -75,6 +75,6 @@
     <p class="cta-description">{{ translations().cta.description }}</p>
     <button class="cta-button" routerLink="/portfolio" type="button">
       {{ translations().cta.button }}
-    </button>
-  </section>
-</div>
+      </button>
+    </section>
+</main>

@@ -72,7 +72,7 @@ button {
   }
 }
 
-// Primary Button
+// Primary Button (works for both button and anchor)
 .btn-primary {
   background-color: #FD262D;
   color: #fff;
@@ -83,9 +83,13 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 
   &:hover {
     background-color: #ff3d44;
+    color: #fff;
   }
 
   &:focus {
@@ -94,7 +98,7 @@ button {
   }
 }
 
-// Secondary Button
+// Secondary Button (works for both button and anchor)
 .btn-secondary {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
@@ -105,9 +109,13 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
   }
 
   &:focus {
