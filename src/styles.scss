@@ -74,22 +74,18 @@ button {
 
 // Primary Button
 .btn-primary {
-  background-color: var(--primary-color);
+  background-color: #FD262D;
   color: #fff;
   border: none;
   padding: 14px 32px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   border-radius: 8px;
 
   &:hover {
-    background-color: var(--primary-hover);
-  }
-
-  &:active {
-    transform: translateY(1px);
+    background-color: #ff3d44;
   }
 
   &:focus {
@@ -107,15 +103,11 @@ button {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   border-radius: 8px;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.15);
-  }
-
-  &:active {
-    transform: translateY(1px);
   }
 
   &:focus {

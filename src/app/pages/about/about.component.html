@@ -1,4 +1,80 @@
 <div class="about-container">
-  <h1>{{ translations().title }}</h1>
-  <p>{{ translations().description }}</p>
+  <!-- Hero Section with Image -->
+  <section class="about-hero">
+    <div class="hero-image-container">
+      <img src="/images/about-us/about-us.png" alt="Equipe trabalhando" class="hero-image" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">{{ translations().hero.title }}</h1>
+        <p class="hero-description">{{ translations().hero.description }}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Blocks -->
+  <section class="about-features">
+    <div class="feature-block">
+      <span class="feature-label">{{ translations().features.authenticity.label }}</span>
+      <h3 class="feature-title">{{ translations().features.authenticity.title }}</h3>
+    </div>
+    <div class="feature-block">
+      <span class="feature-label">{{ translations().features.strategy.label }}</span>
+      <h3 class="feature-title">{{ translations().features.strategy.title }}</h3>
+    </div>
+    <div class="feature-block">
+      <span class="feature-label">{{ translations().features.power.label }}</span>
+      <h3 class="feature-title">{{ translations().features.power.title }}</h3>
+    </div>
+  </section>
+
+  <!-- Image Section 2 -->
+  <section class="about-image-section-2">
+    <img src="/images/about-us/about-us-2.png" alt="Equipe trabalhando" class="about-image-2" />
+  </section>
+
+  <!-- Impact Numbers Section -->
+  <section class="about-impact">
+    <h2 class="impact-title">{{ translations().impact.title }}</h2>
+    <div class="impact-metrics">
+      <div class="metric-block">
+        <span class="metric-label">{{ translations().impact.metrics.profileViews.label }}</span>
+        <div class="metric-value">
+          <span class="metric-number">{{ translations().impact.metrics.profileViews.value }}</span>
+          <svg class="metric-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L8 8L4 4" stroke="#FD262D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 12L12 8L8 4" stroke="#FD262D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="metric-block">
+        <span class="metric-label">{{ translations().impact.metrics.externalClicks.label }}</span>
+        <div class="metric-value">
+          <span class="metric-number">{{ translations().impact.metrics.externalClicks.value }}</span>
+          <svg class="metric-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L8 8L4 4" stroke="#FD262D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 12L12 8L8 4" stroke="#FD262D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="metric-block">
+        <span class="metric-label">{{ translations().impact.metrics.newLeads.label }}</span>
+        <div class="metric-value">
+          <span class="metric-number">{{ translations().impact.metrics.newLeads.value }}</span>
+          <svg class="metric-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 12L8 8L4 4" stroke="#FD262D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 12L12 8L8 4" stroke="#FD262D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="about-cta">
+    <h2 class="cta-title">{{ translations().cta.title }}</h2>
+    <p class="cta-description">{{ translations().cta.description }}</p>
+    <button class="cta-button" routerLink="/portfolio" type="button">
+      {{ translations().cta.button }}
+    </button>
+  </section>
 </div>

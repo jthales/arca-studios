@@ -1,4 +1,104 @@
 <div class="contact-container" id="contact">
-  <h1>{{ translations().title }}</h1>
-  <p>{{ translations().description }}</p>
+  <!-- Header Section -->
+  <div class="contact-header">
+    <h1 class="contact-title">{{ translations().title }}</h1>
+    <p class="contact-description">{{ translations().description }}</p>
+  </div>
+
+  <!-- Main Content: Two Columns -->
+  <div class="contact-content">
+    <!-- Contact Form Section (Left Column) -->
+    <div class="contact-form-section">
+      <h2 class="form-title">{{ translations().form.title }}</h2>
+      <form (ngSubmit)="onSubmit()" class="contact-form">
+        <div class="form-group">
+          <label for="name" class="form-label">{{ translations().form.name }}</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="formData.name"
+            [placeholder]="translations().form.namePlaceholder"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">{{ translations().form.email }}</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="formData.email"
+            [placeholder]="translations().form.emailPlaceholder"
+            class="form-input"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">{{ translations().form.message }}</label>
+          <textarea
+            id="message"
+            name="message"
+            [(ngModel)]="formData.message"
+            [placeholder]="translations().form.messagePlaceholder"
+            class="form-textarea"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="form-submit-button">
+          {{ translations().form.submit }}
+        </button>
+      </form>
+    </div>
+
+    <!-- Direct Contact Section (Right Column) -->
+    <div class="direct-contact-section">
+      <h2 class="direct-contact-title">{{ translations().directContact.title }}</h2>
+      
+      <div class="contact-item">
+        <p class="contact-name">{{ translations().directContact.branding.name }}</p>
+        <a href="mailto:juliana.martinez@arcastudios.com" class="contact-email">
+          {{ translations().directContact.branding.email }}
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <p class="contact-name">{{ translations().directContact.marketing.name }}</p>
+        <a href="mailto:samuel.arellano@arcastudios.com" class="contact-email">
+          {{ translations().directContact.marketing.email }}
+        </a>
+      </div>
+
+      <div class="social-section">
+        <p class="social-title">{{ translations().directContact.followUs }}</p>
+        <div class="social-icons">
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M10 8L16 12L10 16V8Z" fill="currentColor"/>
+            </svg>
+          </a>
+          
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M8 9V19M8 9C7.5 9 7 8.5 7 8C7 7.5 7.5 7 8 7C8.5 7 9 7.5 9 8C9 8.5 8.5 9 8 9ZM16 19V13C16 12 16.5 11 18 11C19.5 11 20 12 20 13V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M4 19V13C4 11.5 4.5 10 6 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </a>
+          
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23 3.01c-1 .49-1.98.69-3 .99-1.01-1.01-2.4-1.64-4-1.64-3.31 0-6 2.69-6 6 0 .52.07 1.02.19 1.5-5-0.25-9.36-2.65-12.31-6.3-.52.89-.81 1.91-.81 3 0 2.07 1.05 3.89 2.64 4.96-.97-.03-1.88-.3-2.68-.73v.07c0 2.91 2.07 5.34 4.82 5.89-.5.14-1.03.21-1.58.21-.39 0-.77-.04-1.14-.11.77 2.41 3.01 4.16 5.67 4.21-2.07 1.63-4.69 2.6-7.53 2.6-.49 0-.97-.03-1.45-.08 2.68 1.72 5.86 2.72 9.28 2.72 11.14 0 17.22-9.23 17.22-17.22 0-.26 0-.53-.02-.79C20.84 6.27 21.46 5.21 22 4.01z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

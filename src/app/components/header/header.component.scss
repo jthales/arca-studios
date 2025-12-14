@@ -141,7 +141,7 @@
 .flag-button {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -181,7 +181,7 @@
   width: 28px;
   height: 20px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: 4px;
   display: block;
 }
 
@@ -249,15 +249,11 @@
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   white-space: nowrap;
 
   &:hover {
     background-color: #ff3d44;
-  }
-
-  &:active {
-    transform: translateY(1px);
   }
 
   &:focus {
@@ -296,7 +292,7 @@
     height: 2px;
     width: 100%;
     background-color: #fff;
-    border-radius: 2px;
+    border-radius: 4px;
     transition: all 0.3s ease;
     transform-origin: center;
   }
@@ -422,7 +418,7 @@
 .mobile-flag-button {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 6px;
+  border-radius: 8px;
   padding: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;

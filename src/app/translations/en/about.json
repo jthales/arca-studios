@@ -1,5 +1,42 @@
 {
-  "title": "About Us",
-  "description": "Learn more about our company"
+  "hero": {
+    "title": "Strategy that connects.",
+    "description": "We work as an internal team, immersing ourselves in your brand's philosophy while bringing external expertise and strategy. No generic tactics — just branding + marketing designed to position, connect, and grow."
+  },
+  "features": {
+    "authenticity": {
+      "label": "Authenticity",
+      "title": "Real Brands"
+    },
+    "strategy": {
+      "label": "Strategy",
+      "title": "Proven Results"
+    },
+    "power": {
+      "label": "Power",
+      "title": "Impactful Growth"
+    }
+  },
+  "impact": {
+    "title": "Our impact in numbers",
+    "metrics": {
+      "profileViews": {
+        "label": "Profile Views",
+        "value": "+46.8%"
+      },
+      "externalClicks": {
+        "label": "External Link Clicks",
+        "value": "+115.4%"
+      },
+      "newLeads": {
+        "label": "New Leads Generated",
+        "value": "+182"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to elevate your brand?",
+    "description": "Let's build something incredible together. Discover how our strategic approach can transform your results.",
+    "button": "Discover Our Projects"
+  }
 }
-

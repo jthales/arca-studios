@@ -1,5 +1,26 @@
 {
-  "title": "Contacto",
-  "description": "Póngase en contacto con nosotros"
+  "title": "Hablemos",
+  "description": "¿Tienes un proyecto en mente o quieres saber más sobre cómo podemos ayudar a tu marca a crecer? Completa el formulario a continuación o contáctanos directamente.",
+  "form": {
+    "title": "Envía tu mensaje",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre completo",
+    "email": "E-mail",
+    "emailPlaceholder": "tu.email@ejemplo.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre tu proyecto",
+    "submit": "Enviar Mensaje"
+  },
+  "directContact": {
+    "title": "Contacto Directo",
+    "branding": {
+      "name": "Juliana Martinez - Branding",
+      "email": "juliana.martinez@arcastudios.com"
+    },
+    "marketing": {
+      "name": "Samuel Arellano - Marketing",
+      "email": "samuel.arellano@arcastudios.com"
+    },
+    "followUs": "Síguenos"
+  }
 }
-

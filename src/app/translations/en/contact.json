@@ -1,5 +1,26 @@
 {
-  "title": "Contact",
-  "description": "Get in touch with us"
+  "title": "Let's talk",
+  "description": "Have a project in mind or want to know more about how we can help your brand grow? Fill out the form below or contact us directly.",
+  "form": {
+    "title": "Send your message",
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "E-mail",
+    "emailPlaceholder": "your.email@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project",
+    "submit": "Send Message"
+  },
+  "directContact": {
+    "title": "Direct Contact",
+    "branding": {
+      "name": "Juliana Martinez - Branding",
+      "email": "juliana.martinez@arcastudios.com"
+    },
+    "marketing": {
+      "name": "Samuel Arellano - Marketing",
+      "email": "samuel.arellano@arcastudios.com"
+    },
+    "followUs": "Follow us"
+  }
 }
-

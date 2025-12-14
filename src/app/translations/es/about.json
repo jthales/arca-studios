@@ -1,5 +1,42 @@
 {
-  "title": "Sobre Nosotros",
-  "description": "Conoce más sobre nuestra empresa"
+  "hero": {
+    "title": "Estrategia que conecta.",
+    "description": "Trabajamos como un equipo interno, sumergiéndonos en la filosofía de tu marca mientras aportamos experiencia y estrategia externas. Sin tácticas genéricas — solo branding + marketing diseñados para posicionar, conectar y crecer."
+  },
+  "features": {
+    "authenticity": {
+      "label": "Autenticidad",
+      "title": "Marcas Reales"
+    },
+    "strategy": {
+      "label": "Estrategia",
+      "title": "Resultados Comprobados"
+    },
+    "power": {
+      "label": "Poder",
+      "title": "Crecimiento Impactante"
+    }
+  },
+  "impact": {
+    "title": "Nuestro impacto en números",
+    "metrics": {
+      "profileViews": {
+        "label": "Visualizaciones de Perfil",
+        "value": "+46,8%"
+      },
+      "externalClicks": {
+        "label": "Clics en Enlaces Externos",
+        "value": "+115,4%"
+      },
+      "newLeads": {
+        "label": "Nuevos Leads Generados",
+        "value": "+182"
+      }
+    }
+  },
+  "cta": {
+    "title": "¿Listo para elevar tu marca?",
+    "description": "Construyamos algo increíble juntos. Descubre cómo nuestro enfoque estratégico puede transformar tus resultados.",
+    "button": "Conoce Nuestros Proyectos"
+  }
 }
-
