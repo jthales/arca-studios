@@ -153,3 +153,15 @@ button {
   background-color: var(--primary-color);
   color: var(--text-primary);
 }
+
+// Prevent zoom on inputs in mobile devices
+// iOS Safari zooms in if font-size is less than 16px
+input,
+textarea,
+select {
+  font-size: 16px !important;
+  
+  @media (max-width: 768px) {
+    font-size: 16px !important;
+  }
+}

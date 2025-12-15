@@ -164,6 +164,15 @@
   .portfolio-image-container {
     height: 320px;
   }
+
+  // Show overlay always visible on mobile (no hover available)
+  .portfolio-overlay {
+    opacity: 1 !important;
+  }
+
+  .portfolio-image {
+    transform: scale(1) !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -183,9 +192,14 @@
 
   .portfolio-overlay {
     padding: 1.5rem;
+    opacity: 1 !important;
   }
 
   .portfolio-name {
     font-size: 1.25rem;
+  }
+
+  .portfolio-image {
+    transform: scale(1) !important;
   }
 }
