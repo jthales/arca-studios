@@ -54,6 +54,8 @@ app-root {
 a {
   color: var(--text-primary);
   transition: color 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   
   &:hover {
     color: var(--primary-color);
@@ -65,6 +67,8 @@ button {
   font-family: inherit;
   cursor: pointer;
   color: #fff;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   
   &:disabled {
     cursor: not-allowed;
