@@ -10,7 +10,7 @@
     <!-- Contact Form Section (Left Column) -->
     <div class="contact-form-section">
       <h2 class="form-title">{{ translations().form.title }}</h2>
-      <form (ngSubmit)="onSubmit()" class="contact-form">
+      <form (ngSubmit)="onSubmit()" class="contact-form" [class.submitting]="isSubmitting()">
         <div class="form-group">
           <label for="name" class="form-label">{{ translations().form.name }}</label>
           <input
@@ -20,6 +20,7 @@
             [(ngModel)]="formData.name"
             [placeholder]="translations().form.namePlaceholder"
             class="form-input"
+            [disabled]="isSubmitting()"
             required
           />
         </div>
@@ -33,6 +34,7 @@
             [(ngModel)]="formData.email"
             [placeholder]="translations().form.emailPlaceholder"
             class="form-input"
+            [disabled]="isSubmitting()"
             required
           />
         </div>
@@ -46,12 +48,62 @@
             [placeholder]="translations().form.messagePlaceholder"
             class="form-textarea"
             rows="6"
+            [disabled]="isSubmitting()"
             required
           ></textarea>
         </div>
 
-        <button type="submit" class="form-submit-button">
-          {{ translations().form.submit }}
+        <!-- Success Message -->
+        @if (submitStatus() === 'success') {
+          <div class="form-message form-message-success" role="alert">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M7 10L9 12L13 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>
+              {{ languageService.currentLanguage() === 'pt' 
+                ? 'Mensagem enviada com sucesso! Entraremos em contato em breve.' 
+                : languageService.currentLanguage() === 'en'
+                ? 'Message sent successfully! We will contact you soon.'
+                : '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.' }}
+            </span>
+          </div>
+        }
+
+        <!-- Error Message -->
+        @if (submitStatus() === 'error' && errorMessage()) {
+          <div class="form-message form-message-error" role="alert">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18Z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M10 6V10M10 14H10.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>{{ errorMessage() }}</span>
+          </div>
+        }
+
+        <button 
+          type="submit" 
+          class="form-submit-button"
+          [disabled]="isSubmitting()"
+        >
+          @if (isSubmitting()) {
+            <svg class="spinner" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" stroke-dasharray="31.416" stroke-dashoffset="31.416" fill="none" opacity="0.3"/>
+              <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" stroke-dasharray="31.416" stroke-dashoffset="23.562" fill="none">
+                <animate attributeName="stroke-dashoffset" values="31.416;0;31.416" dur="1s" repeatCount="indefinite"/>
+                <animateTransform attributeName="transform" type="rotate" values="0 10 10;360 10 10" dur="1s" repeatCount="indefinite"/>
+              </circle>
+            </svg>
+            <span>
+              {{ languageService.currentLanguage() === 'pt' 
+                ? 'Enviando...' 
+                : languageService.currentLanguage() === 'en'
+                ? 'Sending...'
+                : 'Enviando...' }}
+            </span>
+          } @else {
+            {{ translations().form.submit }}
+          }
         </button>
       </form>
     </div>
