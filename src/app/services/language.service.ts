@@ -17,6 +17,10 @@ import portfolioPt from '../translations/pt/portfolio.json';
 import portfolioEn from '../translations/en/portfolio.json';
 import portfolioEs from '../translations/es/portfolio.json';
 
+import projectsPt from '../translations/pt/projects.json';
+import projectsEn from '../translations/en/projects.json';
+import projectsEs from '../translations/es/projects.json';
+
 import contactPt from '../translations/pt/contact.json';
 import contactEn from '../translations/en/contact.json';
 import contactEs from '../translations/es/contact.json';
@@ -33,6 +37,7 @@ interface TranslationFiles {
   home: typeof homePt;
   about: typeof aboutPt;
   portfolio: typeof portfolioPt;
+  projects: typeof projectsPt;
   contact: typeof contactPt;
   footer: typeof footerPt;
 }
@@ -51,6 +56,7 @@ export class LanguageService {
       home: homePt,
       about: aboutPt,
       portfolio: portfolioPt,
+      projects: projectsPt,
       contact: contactPt,
       footer: footerPt
     },
@@ -59,6 +65,7 @@ export class LanguageService {
       home: homeEn,
       about: aboutEn,
       portfolio: portfolioEn,
+      projects: projectsEn,
       contact: contactEn,
       footer: footerEn
     },
@@ -67,6 +74,7 @@ export class LanguageService {
       home: homeEs,
       about: aboutEs,
       portfolio: portfolioEs,
+      projects: projectsEs,
       contact: contactEs,
       footer: footerEs
     }

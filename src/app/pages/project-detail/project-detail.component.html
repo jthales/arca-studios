@@ -1,0 +1,87 @@
+@if (project) {
+  <section class="project-detail-container">
+    <!-- Back Button -->
+    <a [routerLink]="getBackUrl()" class="back-button">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>{{ portfolioTranslations().detail.backToPortfolio }}</span>
+    </a>
+
+    <!-- Hero Image -->
+    <div class="project-hero">
+      <img [src]="project.image" [alt]="project.name + ' | Arca Studios'" class="project-hero-image" />
+    </div>
+
+    <!-- Project Header -->
+    <header class="project-header">
+      <div class="project-meta">
+        <span class="project-category">{{ project.category }}</span>
+        <span class="project-year">{{ project.year }}</span>
+      </div>
+      <h1 class="project-title">{{ project.name }}</h1>
+      <p class="project-description">{{ project.description }}</p>
+    </header>
+
+    <!-- Project Info -->
+    <div class="project-info">
+      <div class="info-item">
+        <span class="info-label">{{ portfolioTranslations().detail.client }}</span>
+        <span class="info-value">{{ project.client }}</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">{{ portfolioTranslations().detail.services }}</span>
+        <span class="info-value">{{ project.services.join(', ') }}</span>
+      </div>
+    </div>
+
+    <!-- Project Content -->
+    <div class="project-content">
+      <!-- Overview -->
+      <section class="content-section">
+        <h2 class="section-title">{{ portfolioTranslations().detail.overview }}</h2>
+        <p class="section-text">{{ project.overview }}</p>
+      </section>
+
+      <!-- Challenge -->
+      <section class="content-section">
+        <h2 class="section-title">{{ portfolioTranslations().detail.challenge }}</h2>
+        <p class="section-text">{{ project.challenge }}</p>
+      </section>
+
+      <!-- Solution -->
+      <section class="content-section">
+        <h2 class="section-title">{{ portfolioTranslations().detail.solution }}</h2>
+        <p class="section-text">{{ project.solution }}</p>
+      </section>
+
+      <!-- Results -->
+      <section class="content-section">
+        <h2 class="section-title">{{ portfolioTranslations().detail.results }}</h2>
+        <ul class="results-list">
+          @for (result of project.results; track result) {
+            <li class="result-item">
+              <svg class="result-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.667 5L7.5 14.167L3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>{{ result }}</span>
+            </li>
+          }
+        </ul>
+      </section>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="project-cta">
+      <h3 class="cta-title">{{ portfolioTranslations().detail.ctaTitle }}</h3>
+      <p class="cta-text">{{ portfolioTranslations().detail.ctaText }}</p>
+      <a [routerLink]="['/contact']" class="cta-button">
+        {{ portfolioTranslations().detail.ctaButton }}
+      </a>
+    </div>
+  </section>
+} @else {
+  <div class="loading-container">
+    <p>{{ portfolioTranslations().detail.loading }}</p>
+  </div>
+}

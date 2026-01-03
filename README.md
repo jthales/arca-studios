@@ -1,27 +1,70 @@
-# ArcaStudios
+# Arca Studios - Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Website da Arca Studios desenvolvido em Angular com suporte multilíngue (PT, EN, ES).
 
-## Development server
+## 🚀 Início Rápido
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Instalação
 
-## Code scaffolding
+```bash
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Desenvolvimento
 
-## Build
+```bash
+npm start
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+O site estará disponível em `http://localhost:4200`
 
-## Running unit tests
+### Build para Produção
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm run build
+```
 
-## Running end-to-end tests
+## 📚 Documentação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Edição de Conteúdo
 
-## Further help
+Para editar textos e conteúdos do site, consulte:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **[Guia em Português](docs/EDITING_CONTENT_PT.md)** - Como editar textos e projetos
+- **[Guide in English](docs/EDITING_CONTENT_EN.md)** - How to edit texts and projects
+
+### Configuração do Formspree
+
+Para configurar o envio de formulários de contato:
+
+- **[Formspree Setup](FORMSPREE_SETUP.md)** - Instruções para configurar o Formspree
+
+## 🌍 Idiomas Suportados
+
+- Português (PT)
+- Inglês (EN)
+- Espanhol (ES)
+
+## 📁 Estrutura do Projeto
+
+```
+src/app/
+├── translations/     # Arquivos JSON de tradução
+│   ├── pt/
+│   ├── en/
+│   └── es/
+├── pages/           # Componentes de páginas
+├── components/      # Componentes compartilhados
+└── services/        # Serviços (Language, SEO)
+```
+
+## 🛠️ Tecnologias
+
+- Angular 18
+- TypeScript
+- SCSS
+- SF Pro Text (fontes locais)
+
+## 📝 Licença
+
+Proprietário - Arca Studios

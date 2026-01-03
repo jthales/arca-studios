@@ -1,5 +1,18 @@
 {
   "heading1": "Our Projects",
   "heading2": "Exploring authenticity and strategy to build brands with power.",
-  "viewCase": "View full case"
+  "viewCase": "View full case",
+  "detail": {
+    "backToPortfolio": "Back to portfolio",
+    "client": "Client",
+    "services": "Services",
+    "overview": "Overview",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "results": "Results",
+    "ctaTitle": "Have a project in mind?",
+    "ctaText": "Let's talk about how we can help your brand grow.",
+    "ctaButton": "Get in touch",
+    "loading": "Loading..."
+  }
 }

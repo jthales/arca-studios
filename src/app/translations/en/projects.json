@@ -1,0 +1,113 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Example Project 1",
+      "description": "Branding and digital strategy",
+      "image": "/images/projects/project1.png",
+      "category": "Branding",
+      "client": "Example Client",
+      "year": "2024",
+      "overview": "This project was developed with a focus on creating a strong visual identity and a complete digital strategy that would position the brand in the market in a differentiated way.",
+      "challenge": "The main challenge was to create an identity that communicated authenticity and innovation, while maintaining an emotional connection with the target audience.",
+      "solution": "We developed a complete branding strategy that included visual identity, brand positioning and digital presence. The solution integrated modern visual elements with traditional brand values.",
+      "results": [
+        "150% increase in brand recognition",
+        "80% growth on social media",
+        "Significant improvement in public perception"
+      ],
+      "services": ["Branding", "Digital Strategy", "Design"]
+    },
+    {
+      "id": 2,
+      "name": "Example Project 2",
+      "description": "Branding and design",
+      "image": "/images/projects/project2.png",
+      "category": "Branding",
+      "client": "Example Client",
+      "year": "2024",
+      "overview": "Project focused on complete brand redesign, including new visual identity and applications in various materials.",
+      "challenge": "Renew the brand image without losing its essence and history, maintaining connection with loyal customers.",
+      "solution": "We created a new visual identity that respected the brand's tradition, but with a contemporary and innovative visual language.",
+      "results": [
+        "Complete visual identity renewal",
+        "60% increase in engagement",
+        "Stronger market positioning"
+      ],
+      "services": ["Branding", "Design"]
+    },
+    {
+      "id": 3,
+      "name": "Example Project 3",
+      "description": "Digital strategy and marketing",
+      "image": "/images/projects/project3.png",
+      "category": "Marketing",
+      "client": "Example Client",
+      "year": "2024",
+      "overview": "Development of a complete digital strategy focused on growth and engagement on digital platforms.",
+      "challenge": "Increase digital presence and create a marketing strategy that generates measurable results.",
+      "solution": "We implemented an integrated digital marketing strategy focused on content, SEO and targeted campaigns.",
+      "results": [
+        "200% growth in organic traffic",
+        "120% increase in conversions",
+        "Improved engagement rate"
+      ],
+      "services": ["Digital Strategy", "Marketing"]
+    },
+    {
+      "id": 4,
+      "name": "Example Project 4",
+      "description": "Branding and digital strategy",
+      "image": "/images/projects/project4.png",
+      "category": "Branding",
+      "client": "Example Client",
+      "year": "2024",
+      "overview": "Complete branding and digital strategy project for launching a new brand in the market.",
+      "challenge": "Create a brand from scratch that would stand out in a competitive market and establish an immediate connection with the audience.",
+      "solution": "We developed a unique identity and a digital strategy that positioned the brand as a reference in its segment from the launch.",
+      "results": [
+        "Successful brand launch",
+        "Immediate market recognition",
+        "Solid follower base from the start"
+      ],
+      "services": ["Branding", "Digital Strategy"]
+    },
+    {
+      "id": 5,
+      "name": "Example Project 5",
+      "description": "Design and marketing",
+      "image": "/images/projects/project5.png",
+      "category": "Design",
+      "client": "Example Client",
+      "year": "2024",
+      "overview": "Design and marketing project focused on creating impactful visual materials and effective campaigns.",
+      "challenge": "Develop a consistent visual language that would work across multiple channels and formats.",
+      "solution": "We created a complete design system with clear guidelines and adaptable materials for all platforms.",
+      "results": [
+        "Design system implemented",
+        "90% increase in visual recognition",
+        "Consistency across all channels"
+      ],
+      "services": ["Design", "Marketing"]
+    },
+    {
+      "id": 6,
+      "name": "Example Project 6",
+      "description": "Branding, design and digital strategy",
+      "image": "/images/projects/project6.png",
+      "category": "Branding",
+      "client": "Example Client",
+      "year": "2024",
+      "overview": "Complete project that integrated branding, design and digital strategy for complete brand transformation.",
+      "challenge": "Transform a traditional brand into a modern and digital brand, maintaining its fundamental values.",
+      "solution": "We developed an integrated strategy that modernized the brand in all aspects, from visual identity to digital presence.",
+      "results": [
+        "Complete brand transformation",
+        "180% increase in digital presence",
+        "Renewal of public perception"
+      ],
+      "services": ["Branding", "Design", "Digital Strategy"]
+    }
+  ]
+}
+

@@ -1,0 +1,113 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Proyecto Ejemplo 1",
+      "description": "Branding y estrategia digital",
+      "image": "/images/projects/project1.png",
+      "category": "Branding",
+      "client": "Cliente Ejemplo",
+      "year": "2024",
+      "overview": "Este proyecto fue desarrollado con un enfoque en crear una identidad visual fuerte y una estrategia digital completa que posicionara la marca en el mercado de manera diferenciada.",
+      "challenge": "El desafío principal fue crear una identidad que comunicara autenticidad e innovación, manteniendo al mismo tiempo la conexión emocional con el público objetivo.",
+      "solution": "Desarrollamos una estrategia completa de branding que incluyó identidad visual, posicionamiento de marca y presencia digital. La solución integró elementos visuales modernos con valores tradicionales de la marca.",
+      "results": [
+        "Aumento del 150% en el reconocimiento de la marca",
+        "Crecimiento del 80% en redes sociales",
+        "Mejora significativa en la percepción del público"
+      ],
+      "services": ["Branding", "Estrategia Digital", "Diseño"]
+    },
+    {
+      "id": 2,
+      "name": "Proyecto Ejemplo 2",
+      "description": "Branding y diseño",
+      "image": "/images/projects/project2.png",
+      "category": "Branding",
+      "client": "Cliente Ejemplo",
+      "year": "2024",
+      "overview": "Proyecto enfocado en el rediseño completo de la marca, incluyendo nueva identidad visual y aplicaciones en diversos materiales.",
+      "challenge": "Renovar la imagen de la marca sin perder su esencia e historia, manteniendo la conexión con clientes leales.",
+      "solution": "Creamos una nueva identidad visual que respetaba la tradición de la marca, pero con un lenguaje visual contemporáneo e innovador.",
+      "results": [
+        "Renovación completa de la identidad visual",
+        "Aumento del 60% en el compromiso",
+        "Posicionamiento más fuerte en el mercado"
+      ],
+      "services": ["Branding", "Diseño"]
+    },
+    {
+      "id": 3,
+      "name": "Proyecto Ejemplo 3",
+      "description": "Estrategia digital y marketing",
+      "image": "/images/projects/project3.png",
+      "category": "Marketing",
+      "client": "Cliente Ejemplo",
+      "year": "2024",
+      "overview": "Desarrollo de estrategia digital completa enfocada en crecimiento y compromiso en plataformas digitales.",
+      "challenge": "Aumentar la presencia digital y crear una estrategia de marketing que generara resultados medibles.",
+      "solution": "Implementamos una estrategia integrada de marketing digital enfocada en contenido, SEO y campañas dirigidas.",
+      "results": [
+        "Crecimiento del 200% en tráfico orgánico",
+        "Aumento del 120% en conversiones",
+        "Mejora en la tasa de compromiso"
+      ],
+      "services": ["Estrategia Digital", "Marketing"]
+    },
+    {
+      "id": 4,
+      "name": "Proyecto Ejemplo 4",
+      "description": "Branding y estrategia digital",
+      "image": "/images/projects/project4.png",
+      "category": "Branding",
+      "client": "Cliente Ejemplo",
+      "year": "2024",
+      "overview": "Proyecto completo de branding y estrategia digital para el lanzamiento de una nueva marca en el mercado.",
+      "challenge": "Crear una marca desde cero que se destacara en un mercado competitivo y estableciera una conexión inmediata con el público.",
+      "solution": "Desarrollamos una identidad única y una estrategia digital que posicionó la marca como referencia en su segmento desde el lanzamiento.",
+      "results": [
+        "Lanzamiento exitoso de la marca",
+        "Reconocimiento inmediato en el mercado",
+        "Base sólida de seguidores desde el inicio"
+      ],
+      "services": ["Branding", "Estrategia Digital"]
+    },
+    {
+      "id": 5,
+      "name": "Proyecto Ejemplo 5",
+      "description": "Diseño y marketing",
+      "image": "/images/projects/project5.png",
+      "category": "Diseño",
+      "client": "Cliente Ejemplo",
+      "year": "2024",
+      "overview": "Proyecto de diseño y marketing enfocado en crear materiales visuales impactantes y campañas efectivas.",
+      "challenge": "Desarrollar un lenguaje visual consistente que funcionara en múltiples canales y formatos.",
+      "solution": "Creamos un sistema de diseño completo con directrices claras y materiales adaptables para todas las plataformas.",
+      "results": [
+        "Sistema de diseño implementado",
+        "Aumento del 90% en el reconocimiento visual",
+        "Consistencia en todos los canales"
+      ],
+      "services": ["Diseño", "Marketing"]
+    },
+    {
+      "id": 6,
+      "name": "Proyecto Ejemplo 6",
+      "description": "Branding, diseño y estrategia digital",
+      "image": "/images/projects/project6.png",
+      "category": "Branding",
+      "client": "Cliente Ejemplo",
+      "year": "2024",
+      "overview": "Proyecto completo que integró branding, diseño y estrategia digital para la transformación completa de la marca.",
+      "challenge": "Transformar una marca tradicional en una marca moderna y digital, manteniendo sus valores fundamentales.",
+      "solution": "Desarrollamos una estrategia integrada que modernizó la marca en todos los aspectos, desde la identidad visual hasta la presencia digital.",
+      "results": [
+        "Transformación completa de la marca",
+        "Aumento del 180% en la presencia digital",
+        "Renovación de la percepción del público"
+      ],
+      "services": ["Branding", "Diseño", "Estrategia Digital"]
+    }
+  ]
+}
+

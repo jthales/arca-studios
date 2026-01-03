@@ -5,23 +5,25 @@
   </header>
 
   <div class="portfolio-grid" role="list">
-    @for (project of projects; track project.id) {
+    @for (project of projects(); track project.id) {
       <article class="portfolio-card" role="listitem">
-        <div class="portfolio-image-container">
-          <img [src]="project.image" [alt]="project.name + ' - ' + project.description + ' | Arca Studios'" class="portfolio-image" loading="lazy" />
-          <div class="portfolio-overlay">
-            <div class="portfolio-content">
-              <h3 class="portfolio-name">{{ project.name }}</h3>
-              <p class="portfolio-description">{{ project.description }}</p>
-              <button class="portfolio-button" type="button">
-                {{ translations().viewCase }}
-                <svg class="portfolio-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
+        <a [routerLink]="['/portfolio', project.id]" class="portfolio-card-link">
+          <div class="portfolio-image-container">
+            <img [src]="project.image" [alt]="project.name + ' - ' + project.description + ' | Arca Studios'" class="portfolio-image" loading="lazy" />
+            <div class="portfolio-overlay">
+              <div class="portfolio-content">
+                <h3 class="portfolio-name">{{ project.name }}</h3>
+                <p class="portfolio-description">{{ project.description }}</p>
+                <span class="portfolio-button">
+                  {{ translations().viewCase }}
+                  <svg class="portfolio-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </article>
     }
   </div>

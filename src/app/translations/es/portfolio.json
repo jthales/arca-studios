@@ -1,5 +1,18 @@
 {
   "heading1": "Nuestros Proyectos",
   "heading2": "Explorando la autenticidad y la estrategia para construir marcas con poder.",
-  "viewCase": "Ver caso completo"
+  "viewCase": "Ver caso completo",
+  "detail": {
+    "backToPortfolio": "Volver al portafolio",
+    "client": "Cliente",
+    "services": "Servicios",
+    "overview": "Visión General",
+    "challenge": "Desafío",
+    "solution": "Solución",
+    "results": "Resultados",
+    "ctaTitle": "¿Tienes un proyecto en mente?",
+    "ctaText": "Hablemos sobre cómo podemos ayudar a tu marca a crecer.",
+    "ctaButton": "Contáctanos",
+    "loading": "Cargando..."
+  }
 }
